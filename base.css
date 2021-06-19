@@ -1,0 +1,93 @@
+h1{
+	color: #d3dce0;
+	font-family: "Comic Sans MS";
+	text-align: center;  
+	animation-name: Titulo;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	animation-delay: 0s;
+}	
+@keyframes Titulo{
+	0% {color: #d3dce0;}
+	33% {color: black;}
+	66% {color: #d3dce0;}
+}	
+body{
+	background-color: rgba(5,21,34,255);
+	font-family: Arial;
+	padding-left: 30px;
+  color: #d3dce0;
+}
+footer{
+	color: #cedadf;
+}
+nav ul li a{
+	color:#cedadf;
+}
+.lugares {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: 
+	"iskra iskraImg iskraImg"
+	"waterloo waterlooImg waterlooImg"
+	"ciudadDeDios ciudadDeDiosImg ciudadDeDiosImg"
+	"bariho barihoImg barihoImg"
+	"laTaberna laTabernaImg laTabernaImg";
+	width: 95%;
+	gap: 15px;
+	height: 2050px;
+}
+.lugares #iskra{
+    grid-area: iskra;
+}
+.lugares #waterloo{
+    grid-area: waterloo;
+}
+.lugares #ciudadDeDios{
+    grid-area: ciudadDeDios;
+}
+.lugares #bariho{
+    grid-area: bariho;
+}
+.lugares #laTaberna{
+    grid-area: laTaberna;
+}
+.lugares #iskraImg{
+	grid-area: iskraImg;
+}
+.lugares #waterlooImg{
+	grid-area: waterlooImg;
+}
+.lugares #barihoImg{
+	grid-area: barihoImg;
+}
+.lugares #ciudadDeDiosImg{
+	grid-area: ciudadDeDiosImg;
+}
+.lugares #laTabernaImg{
+	grid-area: laTabernaImg;
+}
+section{
+	color: #cedadf;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+p{
+	color: #cedadf;
+}
+div{
+	color: #cedadf;
+}
+#barra ul ul{
+	position: absolute;
+	display: none;
+	}
+#barra ul ul li{
+	display:block;
+	color: blanchedalmond;
+}
+#barra ul li:hover ul {
+	display:block;
+ }  
